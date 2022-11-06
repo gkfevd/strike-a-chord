@@ -57,6 +57,10 @@ figcaption {
   font-weight: bold;
 }
 
+table {
+  
+}
+
 /* Style rules for header content */
 header {
     text-align: center;
@@ -104,6 +108,26 @@ main p {
     font-size: 1.25em;
 }
 
+/* Style rules for form elements */
+fieldset, input {
+  margin-bottom: 2%;
+}
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+label {
+  display:block;
+  padding-top: 3%;
+}
+form #submit {
+  margin: 0 auto;
+  display: block;
+  padding: 3%;
+  background-color: #b7b7e1;
+  font-size: 1em;
+}
+
 /* Style rules for footer content */
 footer {
     text-align: center;
@@ -147,6 +171,7 @@ footer a {
 #contact {
     text-align: center;
 }
+
  
 #contact .email-link {
     color: #4645a8;
@@ -174,6 +199,49 @@ footer a {
     height: 50%;
 }
 
+#form h2 {
+  font-weight: bold;
+  font-size: 1.25em;
+  text-align: center;
+
+/* Style rules for table elements */
+
+table {
+    border: 1px solid #373684;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+ 
+caption {
+    font-size: 1.5em;
+    font-weight: bold; 
+    padding: 1%;
+}
+ 
+th, td {
+    border: 1px solid #373684;
+    padding: 2%; 
+}
+ 
+th {
+    background-color: #373684;
+    color: #fff;
+    font-size: 1.15em;
+}
+ 
+tr:nth-child(odd) {
+    background-color: #b7b7e1;  
+}
+
+#rental h2 {
+  font-weight: bold;
+  font-size: 1.25em;
+   text-align: center;
+}
+
+
+}
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 700px), print {
 .grid {
@@ -186,5 +254,24 @@ footer a {
       grid-template-columns: auto auto auto auto;
     }
 
-    
+    /*Tablet Viewport: Style rule for form element*/
+    form {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    /*Desktop Viewport: Style rules for table element.*/
+    table {
+      width: 70%;
+    }
+
+    /*Desktop Viewport: Style rules for form elements*/
+    form-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 20px;
+    }
+    .btn {
+      grid-column: 1 / span 2;
+    }
 }
